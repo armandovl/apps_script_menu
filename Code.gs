@@ -1,11 +1,11 @@
 function onOpen() {
   var menusX = SpreadsheetApp.getUi();
-  menusX.createMenu('Nuevo Menú')
+  menusX.createMenu('Nuevo Menú') // este es el título del menú
       .addItem('Ejecutar 0', 'myFunction')
       .addSeparator()
       
       .addItem('Ejecutar 1', 'funcionUno')
-      //.addSeparator() 
+      //.addSeparator() //estos son separadores
       
       .addItem('Ejecutar 2', 'funcionDos')
       //.addSeparator()
@@ -21,7 +21,7 @@ function onOpen() {
       .addToUi();
 }
 
-
+// aquí empiezan las funciones que se van a ejecutar
 function myFunction() {
   Browser.msgBox("Funcion cero");
 }
